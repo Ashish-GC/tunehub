@@ -1,0 +1,54 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="css/login.css" />
+     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+   </head>
+   <body>
+    {{!-- navbar --}}
+          <nav id="navbar">
+    <div id="logo">
+        <img src="css/img/logo.png" alt="remote image">
+    </div>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/offline">Offline</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+    </ul>
+         </nav>
+
+
+<!-- video -->
+    <section class="video_background">
+        <div class="video_container">
+            <video src="css/video/video.mp4" autoplay muted loop></video>
+        </div>
+        <div class="content">
+          <div class="main">
+      <form action="/login" method="post" class="form">
+            <h1>Sign-In</h1>
+        <p>{{message}}</p>
+           <input type="email"  name="email" placeholder="Email" class="input" >
+          
+           <input type="password"  name="password" placeholder="Password" class="input" >
+
+           <input type="submit"  name="register" value="LOGIN" class="reg_btn">
+
+        </form>     
+</div>    
+              </div>
+        </div>
+    </section>
+
+    <script src="js/login.js"></script>
+
+   </body>   
+   </html>

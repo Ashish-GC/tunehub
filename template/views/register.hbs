@@ -1,0 +1,71 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+ <link rel="stylesheet" href="css/navbar.css">
+   </head>
+   <body>
+  {{!-- navbar --}}
+          <nav id="navbar">
+    <div id="logo">
+        <img src="css/img/logo.png" alt="remote image">
+    </div>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/offline">Offline</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+    </ul>
+         </nav>
+
+{{!-- video  --}}
+
+
+<!-- video -->
+    <section class="video_background">
+        <div class="video_container">
+            <video src="css/video/video.mp4" autoplay muted loop></video>
+        </div>
+        <div class="content">
+             
+               {{!-- registration page --}}
+         
+    <div class="main">
+
+        <form action="/register" method="post" class="form">
+        <h1>Sign-Up</h1>
+           <input type="text"  name="username" placeholder="User Name" class="input" >
+          
+           <input type="email"  name="email" placeholder="Your Email" class="input">
+         
+           <input type="number"  name="phone" placeholder="Your Phone" class="input" id="phone_number">
+         
+           <input type="number"  name="age" placeholder="Enter Your Age"  class="input" id="age">
+       
+           <input type="password"  name="password" placeholder="Password" class="input">
+     
+          
+           <input type="password"  name="confirmpassword" placeholder="Confirm Password" class="input">
+      
+           
+           <input type="submit"  name="register" value="Register"  class="reg_btn">
+       
+  
+        </form>
+</div>  
+                  
+        </div>
+    </section>
+
+
+       
+    
+    <script src="js/login.js"></script>
+   </body>
+   </html>

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');    
+          
+             * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: "Roboto", sans-serif;
+                background-size: cover;
+                backdrop-filter: blur(6px);
+                overflow: hidden;
+            }
+         /* navbar */
+
+         #navbar {
+            display: flex;
+            align-items: center;
+            position:sticky;
+            top:0px;
+          }
+          
+          #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top:0px;
+            left:0px;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            opacity:0.35;
+          }
+          
+          #logo {
+            margin: 5px 20px;
+          }
+          
+          #logo img {
+            height: 50px;
+            width: 75px;
+            border-radius: 50%;
+          }
+          
+          #navbar ul {
+            display: flex;
+          }
+          
+          #navbar ul li {
+            list-style: none;
+            font-size: 1.25rem;
+          }
+          
+          #navbar ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 3px 22px;
+            border-radius: 20px;
+            color: white;
+          
+          }
+          
+          #navbar ul li a:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgba(6, 69, 125, 0.98);
+          
+          }
+
+          
+.content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: rgb(252, 248, 248);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:100%;
+    top: 0;
+    left: 0;
+}
+/* video section */
+.video_container {
+    overflow: hidden;
+    }
+    .video_background{
+        position: absolute;
+        width: 100%;
+        height:100vh;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    .video_container{
+    width: 100%;
+    height: 100%;
+    background: url('./video/cover.jpg') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    }
+    
+    video{
+        height:100vh;
+        width:100vw;
+        object-fit:cover;
+        filter: blur(5px);
+    }
+
+/* login form */
+
+
+           .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           height: 90vh;
+           }
+        
+            .form {
+                background: rgb(189 14 14 / 0%);
+                padding: 50px 18px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.6);
+            }
+            
+            .input {
+                display: block;
+                padding: 17px 15px;
+                margin: 20px 15px;
+                background: rgba(0, 0, 0, 0.3);
+                border: 1px rgba(0, 0, 0, 0.2) solid;
+                outline: none;
+                border-radius: 25px;
+                width: 400px;
+                color: #ffffff;
+                transition: 0.6s border-color;
+                font-size: 12px;
+            }
+            .input:hover {
+                border-color: #ffffff;
+            }
+            
+            .form p{
+                color:white;
+                font-size:13px;
+                margin-top:10px;
+            }
+
+            .form h1 {
+                text-align: center;
+                color: #ffffff;
+                letter-spacing: 4px;
+                padding: 5px;
+            }
+           
+            .reg_btn {
+                padding: 17px;
+                width: 137px;
+                margin: 5px 16px;
+                border-radius: 25px;
+                border: 2px solid #ffffff;
+                cursor: pointer;
+                color: #ffffff;
+                font-weight: bold;
+                background: #ffffff00;
+                font-size: 14px;
+                background-color: #07070769;
+      
+            }
+            
+            .reg_btn:hover {
+                background-color: #0f015c8c;
+                border-color: rgb(255, 255, 255);
+                font-size:16px;
+            }
+            ::placeholder {
+                color: rgb(255, 251, 251);
+                opacity: 1; 
+                font-size:12px;
+              }
+              input:focus::placeholder {
+                color: transparent;
+              }
+           
